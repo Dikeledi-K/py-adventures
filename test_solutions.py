@@ -7,7 +7,7 @@ class TestSolutions(unittest.TestCase):
     def test_mastermind(self):
         self.assertEqual(mastermind("RGBY", "RGBY"), (4, 0))
         self.assertEqual(mastermind("RGBY", "YRGB"), (0, 4))
-        self.assertEqual(mastermind("RGBY", "RRGG"), (2, 0))
+        self.assertEqual(mastermind("RGBY", "RRGG"), (1, 1))
         
     def test_to_roman(self):
         self.assertEqual(to_roman(3), "III")
